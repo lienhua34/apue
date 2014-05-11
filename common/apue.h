@@ -21,12 +21,12 @@
 /*
  * Default file access permissions for new files.
  */
-#define FILE_MODE (S_IRUSER | S_IWUSER | S_IRGRP | S_IROTH)
+#define FILE_MODE (S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)
 
 /*
  * Default permissions for new directories.
  */
-#define DIR_MODE (FILE_MODE | S_IXUSER | S_IXGRP | S_IXOTH)
+#define DIR_MODE (FILE_MODE | S_IXUSR | S_IXGRP | S_IXOTH)
 
 typedef void Sigfunc(int);   /* for signal handlers */
 

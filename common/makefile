@@ -6,6 +6,8 @@ pathalloc.o: pathalloc.c apue.h
 	gcc -c pathalloc.c -o pathalloc.o
 openmax.o: openmax.c apue.h
 	gcc -c openmax.c -o openmax.o
+iofuncs.o: iofuncs.c apue.h
+	gcc -c iofuncs.c -o iofuncs.o
 
 clean:
 	rm *.o
