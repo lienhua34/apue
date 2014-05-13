@@ -8,7 +8,11 @@ umaskdemo: umaskdemo.o ../../common/apueerr.o
 	gcc -o umaskdemo umaskdemo.o ../../common/apueerr.o
 chmoddemo: chmoddemo.o ../../common/apueerr.o
 	gcc -o chmoddemo chmoddemo.o ../../common/apueerr.o
+unlink: unlink.o ../../common/apueerr.o
+	gcc -o unlink unlink.o ../../common/apueerr.o
+utimedemo: utimedemo.o ../../common/apueerr.o
+	gcc -o utimedemo utimedemo.o ../../common/apueerr.o
 
 clean:
 	rm *.o
-	rm filetype accessfile umaskdemo chmoddemo
+	rm filetype accessfile umaskdemo chmoddemo unlink utimedemo
