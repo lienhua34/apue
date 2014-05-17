@@ -18,7 +18,9 @@ getcwd_demo: getcwd_demo.o ../../common/apueerr.o ../../common/pathalloc.o
 	gcc -o getcwd_demo getcwd_demo.o ../../common/apueerr.o ../../common/pathalloc.o
 st_dev_demo: st_dev_demo.o ../../common/apueerr.o
 	gcc -o st_dev_demo st_dev_demo.o ../../common/apueerr.o
+myftw: myftw.o ../../common/apueerr.o ../../common/pathalloc.o
+	gcc -o myftw myftw.o ../../common/apueerr.o ../../common/pathalloc.o
 
 clean:
 	rm *.o
-	rm filetype accessfile umaskdemo chmoddemo unlink utimedemo getcwd_demo
+	rm filetype accessfile umaskdemo chmoddemo unlink utimedemo getcwd_demo st_dev_demo myftw
