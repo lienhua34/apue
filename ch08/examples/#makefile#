@@ -1,0 +1,7 @@
+../../common/apueerr.o: ../../common/apueerr.c
+	cd ../../common & make apueerr.o
+
+forkdemo: forkdemo.c ../../comon/pueerr.o
+
+clean:
+	

@@ -10,6 +10,12 @@ echoarg: echoarg.o ../../common/apueerr.o
 echoenviron: echoenviron.o
 	gcc -o echoenviron echoenviron.o
 
+envdemo: envdemo.o
+	gcc -o envdemo envdemo.o
+
+setjmpdemo: setjmpdemo.o
+	gcc -O -o setjmpdemo setjmpdemo.o
+
 clean:
 	rm -f *.o
-	rm atexit_demo echoarg echoenviron
+	rm atexit_demo echoarg echoenviron envdemo setjmpdemo
