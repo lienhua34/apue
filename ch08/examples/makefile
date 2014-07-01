@@ -4,6 +4,9 @@
 forkdemo: forkdemo.o ../../common/apueerr.o
 	gcc -o forkdemo forkdemo.o ../../common/apueerr.o
 
+vforkdemo: vforkdemo.o ../../common/apueerr.o
+	gcc -o vforkdemo vforkdemo.o ../../common/apueerr.o
+
 clean:
 	rm -f *.o
-	rm -f forkdemo
+	rm -f forkdemo vforkdemo
