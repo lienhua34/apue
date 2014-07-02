@@ -7,6 +7,12 @@ forkdemo: forkdemo.o ../../common/apueerr.o
 vforkdemo: vforkdemo.o ../../common/apueerr.o
 	gcc -o vforkdemo vforkdemo.o ../../common/apueerr.o
 
+waitdemo: waitdemo.o ../../common/apueerr.o
+	gcc -o waitdemo waitdemo.o ../../common/apueerr.o
+
+waitpiddemo: waitpiddemo.o ../../common/apueerr.o
+	gcc -o waitpiddemo waitpiddemo.o ../../common/apueerr.o
+
 clean:
 	rm -f *.o
-	rm -f forkdemo vforkdemo
+	rm -f forkdemo vforkdemo waitdemo waitpiddemo
