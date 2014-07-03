@@ -13,6 +13,9 @@ waitdemo: waitdemo.o ../../common/apueerr.o
 waitpiddemo: waitpiddemo.o ../../common/apueerr.o
 	gcc -o waitpiddemo waitpiddemo.o ../../common/apueerr.o
 
+racecond_demo: racecond_demo.o ../../common/apueerr.o
+	gcc -o racecond_demo racecond_demo.o ../../common/apueerr.o
+
 clean:
 	rm -f *.o
-	rm -f forkdemo vforkdemo waitdemo waitpiddemo
+	rm -f forkdemo vforkdemo waitdemo waitpiddemo racecond_demo
