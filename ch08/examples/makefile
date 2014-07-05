@@ -19,6 +19,21 @@ racecond_demo: racecond_demo.o ../../common/apueerr.o
 execdemo: execdemo.o ../../common/apueerr.o
 	gcc -o execdemo execdemo.o ../../common/apueerr.o
 
+echoall: echoall.o ../../common/apueerr.o
+	gcc -o echoall echoall.o ../../common/apueerr.o
+
+execinterp: execinterp.o ../../common/apueerr.o
+	gcc -o execinterp execinterp.o ../../common/apueerr.o
+
+systemdemo: systemdemo.o ../../common/apueerr.o
+	gcc -o systemdemo systemdemo.o ../../common/apueerr.o
+
+tsys: tsys.o ../../common/apueerr.o
+	gcc -o tsys tsys.o ../../common/apueerr.o
+
+printuids: printuids.o ../../common/apueerr.o
+	gcc -o printuids printuids.o ../../common/apueerr.o
+
 clean:
 	rm -f *.o
-	rm -f forkdemo vforkdemo waitdemo waitpiddemo racecond_demo execdemo
+	rm -f forkdemo vforkdemo waitdemo waitpiddemo racecond_demo execdemo execinterp systemdemo tsys printuids
