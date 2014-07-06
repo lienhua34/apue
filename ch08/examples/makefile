@@ -34,6 +34,12 @@ tsys: tsys.o ../../common/apueerr.o
 printuids: printuids.o ../../common/apueerr.o
 	gcc -o printuids printuids.o ../../common/apueerr.o
 
+getlogindemo: getlogindemo.o ../../common/apueerr.o
+	gcc -o getlogindemo getlogindemo.o ../../common/apueerr.o
+
+timesdemo: timesdemo.o ../../common/apueerr.o
+	gcc -o timesdemo timesdemo.o ../../common/apueerr.o
+
 clean:
 	rm -f *.o
-	rm -f forkdemo vforkdemo waitdemo waitpiddemo racecond_demo execdemo execinterp systemdemo tsys printuids
+	rm -f forkdemo vforkdemo waitdemo waitpiddemo racecond_demo execdemo execinterp systemdemo tsys printuids getlogindemo timesdemo
