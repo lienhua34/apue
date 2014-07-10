@@ -5,7 +5,12 @@ signaldemo: signaldemo.o ../../common/apueerr.o
 alarmdemo: alarmdemo.o ../../common/apueerr.o
 	gcc -o alarmdemo alarmdemo.o ../../common/apueerr.o
 sigclddemo: sigclddemo.o ../../common/apueerr.o
+	gcc -o sigclddemo sigclddemo.o ../../common/apueerr.o
+readWithOvertime: readWithOvertime.o ../../common/apueerr.o
+	gcc -o readWithOvertime readWithOvertime.o ../../common/apueerr.o
+readWithLongjmp: readWithLongjmp.o ../../common/apueerr.o
+	gcc -o readWithLongjmp readWithLongjmp.o ../../common/apueerr.o
 
 clean:
 	rm -f *.o
-	rm -f signaldemo alarmdemo sigclddemo
+	rm -f signaldemo alarmdemo sigclddemo readWithOvertime readWithLongjmp
