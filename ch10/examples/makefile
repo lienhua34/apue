@@ -10,7 +10,11 @@ readWithOvertime: readWithOvertime.o ../../common/apueerr.o
 	gcc -o readWithOvertime readWithOvertime.o ../../common/apueerr.o
 readWithLongjmp: readWithLongjmp.o ../../common/apueerr.o
 	gcc -o readWithLongjmp readWithLongjmp.o ../../common/apueerr.o
+pr_mask.o: pr_mask.c
+	gcc -c pr_mask.c
+sigprocmaskdemo: sigprocmaskdemo.o ../../common/apueerr.o
+	gcc -o sigprocmaskdemo sigprocmaskdemo.o ../../common/apueerr.o
 
 clean:
 	rm -f *.o
-	rm -f signaldemo alarmdemo sigclddemo readWithOvertime readWithLongjmp
+	rm -f signaldemo alarmdemo sigclddemo readWithOvertime readWithLongjmp sigprocmaskdemo

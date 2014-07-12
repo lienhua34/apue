@@ -45,7 +45,7 @@ long    open_max(void);
 void    clr_fl(int, int);
 void    set_fl(int, int);
 void    pr_exit(int);
-void    pr_mask(int);
+void    pr_mask(const char *);
 Sigfunc *signal_intr(int, Sigfunc *);
 
 int     tty_cbreak(int);
