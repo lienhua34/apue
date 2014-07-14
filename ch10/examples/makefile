@@ -18,7 +18,11 @@ sigprocmaskdemo: sigprocmaskdemo.o ../../common/apueerr.o
 	gcc -o sigprocmaskdemo sigprocmaskdemo.o ../../common/apueerr.o
 sigjmpdemo: sigjmpdemo.o  pr_mask.o ../../common/apueerr.o
 	gcc -o sigjmpdemo  sigjmpdemo.o  pr_mask.o ../../common/apueerr.o
+sigsuspenddemo: sigsuspenddemo.o pr_mask.o ../../common/apueerr.o
+	gcc -o sigsuspenddemo sigsuspenddemo.o pr_mask.o ../../common/apueerr.o
+sigsuspenddemo1: sigsuspenddemo1.o ../../common/apueerr.o
+	gcc -o sigsuspenddemo1 sigsuspenddemo1.o ../../common/apueerr.o
 
 clean:
 	rm -f *.o
-	rm -f signaldemo alarmdemo sigclddemo readWithOvertime readWithLongjmp sigprocmaskdemo sigjmpdemo
+	rm -f signaldemo alarmdemo sigclddemo readWithOvertime readWithLongjmp sigprocmaskdemo sigjmpdemo sigsuspenddemo sigsuspenddemo1
