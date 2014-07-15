@@ -23,6 +23,9 @@ sigsuspenddemo: sigsuspenddemo.o pr_mask.o ../../common/apueerr.o
 sigsuspenddemo1: sigsuspenddemo1.o ../../common/apueerr.o
 	gcc -o sigsuspenddemo1 sigsuspenddemo1.o ../../common/apueerr.o
 
+abortdemo: abortdemo.c
+	gcc -o abortdemo abortdemo.c
+
 clean:
 	rm -f *.o
-	rm -f signaldemo alarmdemo sigclddemo readWithOvertime readWithLongjmp sigprocmaskdemo sigjmpdemo sigsuspenddemo sigsuspenddemo1
+	rm -f signaldemo alarmdemo sigclddemo readWithOvertime readWithLongjmp sigprocmaskdemo sigjmpdemo sigsuspenddemo sigsuspenddemo1 abortdemo
