@@ -26,6 +26,9 @@ sigsuspenddemo1: sigsuspenddemo1.o ../../common/apueerr.o
 abortdemo: abortdemo.c
 	gcc -o abortdemo abortdemo.c
 
+systemdemo: systemdemo.o ../../common/apueerr.o
+	gcc -o systemdemo systemdemo.o ../../common/apueerr.o
+
 clean:
 	rm -f *.o
-	rm -f signaldemo alarmdemo sigclddemo readWithOvertime readWithLongjmp sigprocmaskdemo sigjmpdemo sigsuspenddemo sigsuspenddemo1 abortdemo
+	rm -f signaldemo alarmdemo sigclddemo readWithOvertime readWithLongjmp sigprocmaskdemo sigjmpdemo sigsuspenddemo sigsuspenddemo1 abortdemo systemdemo
