@@ -19,7 +19,7 @@ void *
 timeout_helper(void *arg)
 {
   struct to_info *tip;
-
+    
   tip = (struct to_info *)arg;
   nanosleep(&tip->to_wait, NULL);
   (*tip->to_fn)(tip->to_arg);
@@ -75,6 +75,7 @@ void
 retry(void *arg)
 {
   pthread_mutex_lock(&mutex);
+
   /* perform every steps */
   pthread_mutex_unlock(&mutex);
 }
