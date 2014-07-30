@@ -17,6 +17,15 @@ lockfile.o:lockfile.c
 deadlock_demo: deadlock_demo.o lock_reg.o lock_test.o ../../common/apueerr.o ../../ch10/examples/parent_child_comm_demo.o
 	gcc -o deadlock_demo ../../common/apueerr.o ../../ch10/examples/parent_child_comm_demo.o lock_test.o lock_reg.o deadlock_demo.o
 
+isastream_demo: isastream_demo.o ../../common/apueerr.o
+	gcc -o isastream_demo ../../common/apueerr.o isastream_demo.o
+
+ilist_demo: ilist_demo.o ../../common/apueerr.o
+	gcc -o ilist_demo ../../common/apueerr.o ilist_demo.o
+
+getmsg_demo: getmsg_demo.o ../../common/apueerr.o
+	gcc -o getmsg_demo getmsg_demo.o ../../common/apueerr.o
+
 clean:
 	rm -rf *.o
-	rm -rf nonblock_io_demo deadlock_demo
+	rm -rf nonblock_io_demo deadlock_demo isastream_demo ilist_demo getmsg_demo
