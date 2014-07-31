@@ -26,6 +26,9 @@ ilist_demo: ilist_demo.o ../../common/apueerr.o
 getmsg_demo: getmsg_demo.o ../../common/apueerr.o
 	gcc -o getmsg_demo getmsg_demo.o ../../common/apueerr.o
 
+readn_writen.o: readn_writen.c
+	gcc -c readn_writen.c
+
 clean:
 	rm -rf *.o
 	rm -rf nonblock_io_demo deadlock_demo isastream_demo ilist_demo getmsg_demo
