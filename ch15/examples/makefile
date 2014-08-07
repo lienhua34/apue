@@ -22,6 +22,9 @@ add2: add2.o ../../common/apueerr.o
 add2_coprocess: add2_coprocess.o ../../common/apueerr.o
 	gcc -o add2_coprocess add2_coprocess.o ../../common/apueerr.o
 
+share_mem_demo: share_mem_demo.o ../../common/apueerr.o
+	gcc -o share_mem_demo share_mem_demo.o ../../common/apueerr.o
+
 clean:
 	rm -rf *.o
-	rm -rf pipe_demo pipe_2_pager popen_2_pager filter_upchar filter_demo add2 add2_coprocess
+	rm -rf pipe_demo pipe_2_pager popen_2_pager filter_upchar filter_demo add2 add2_coprocess share_mem_demo
