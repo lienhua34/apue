@@ -84,7 +84,7 @@ daemonize(const char *cmd)
     exit(1);
   }
 }
-
+/*
 int
 main(void)
 {
@@ -93,3 +93,4 @@ main(void)
   sleep(1000);
   exit(0);
 }
+*/
